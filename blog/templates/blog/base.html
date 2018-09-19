@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="sidebar">
+            <!--<h2>Divya's Blog</h2>
+                <p>This is my blog.</p>-->
+        </div>
+</body>
+</html>
