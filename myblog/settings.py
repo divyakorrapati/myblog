@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'myblog19.urls'
+ROOT_URLCONF = 'myblog.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myblog19.wsgi.application'
+WSGI_APPLICATION = 'myblog.wsgi.application'
 
 
 # Database
@@ -138,7 +138,8 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Extra places for collectstatic to find static files.
+# Extra places for collectstatic to find
+# static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
